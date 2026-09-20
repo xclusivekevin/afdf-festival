@@ -1,0 +1,33 @@
+/* AFDF Design System v1.0 · tokens · 20 Sep 2026 */
+:root {
+  --afdf-maroon-900: #300809; --afdf-maroon-950: #1A0404;
+  --afdf-red-600: #BC1320; --afdf-red-700: #AA1000; --afdf-red-500: #A42423;
+  --afdf-orange-500: #FA9800; --afdf-orange-600: #E66F00; --afdf-orange-400: #F08E1F;
+  --afdf-yellow-500: #E7BE00; --afdf-yellow-600: #CBB200; --afdf-peach-200: #FFBC7D;
+  --afdf-olive-800: #2D360D;
+  --afdf-black: #000000; --afdf-ink-900: #111111; --afdf-grey-700: #54595F; --afdf-grey-600: #7A7A7A;
+  --afdf-grey-400: #C4C4C4; --afdf-sand-200: #CDC5B8; --afdf-cream-50: #FAF6F1; --afdf-cream-25: #FFFDF9; --afdf-white: #FFFFFF;
+
+  --color-bg-maroon: var(--afdf-maroon-900); --color-bg-black: var(--afdf-black); --color-bg-white: var(--afdf-white);
+  --color-heading-on-dark: var(--afdf-white); --color-heading-on-light: var(--afdf-black);
+  --color-emphasis: var(--afdf-orange-500);
+  --color-action: var(--afdf-red-600); --color-action-hover: var(--afdf-red-700);
+  --color-action-alt: var(--afdf-orange-500); --color-action-alt-hover: var(--afdf-orange-600);
+  --color-text-on-dark: var(--afdf-white); --color-text-on-light: var(--afdf-ink-900);
+  --color-border-panel: var(--afdf-orange-500);
+  --gradient-panel: linear-gradient(90deg, #FA9800, #F08E1F, #E7BE00);
+
+  --font-display: "Galindo", "Impact", sans-serif;
+  --font-body: "Carlito", "Lato", system-ui, sans-serif;
+  --font-ui: "Poppins", system-ui, sans-serif;
+  --text-hero: clamp(48px, 8vw, 96px); --text-h1: clamp(36px, 5vw, 64px); --text-h1-sm: clamp(28px, 3.5vw, 48px);
+  --text-body: 17px; --text-faq: 17px; --text-button: 18px;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px;
+  --section-y: 96px; --section-y-mobile: 56px; --container: 1160px;
+
+  --radius-panel: 24px; --radius-card: 16px; --radius-image: 8px; --radius-button: 4px; --radius-faq: 4px;
+  --shadow-button: 4px 4px 0 rgba(0,0,0,0.45); --shadow-button-hover: 2px 2px 0 rgba(0,0,0,0.45);
+  --shadow-image: 4px 4px 0 rgba(0,0,0,0.35); --glow-panel: 0 0 24px rgba(250,152,0,0.35);
+  --z-frame: 1; --z-content: 2; --z-nav: 50; --z-overlay: 100;
+}

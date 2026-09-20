@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+import Legal from "@/components/Legal";
+export const metadata: Metadata = { title: "Terms of Use" };
+export default function Page() {
+  return (
+    <Legal title="Terms of Use">
+      <h2>1. Agreement to Terms</h2><p>These Terms of Use constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and the African Food and Drinks Festival (“we,” “us” or “our”), concerning your access to and use of the <a href="https://festival.afrifoodnetwork.com/">festival.afrifoodnetwork.com</a> website as well as any other media form, media channel, mobile website, or mobile application related, linked, or otherwise connected thereto (collectively, the “Site”).</p>
+      <h2>2. User Representations</h2><p>By using the Site, you represent and warrant that:</p><ul><li>You have the legal capacity and you agree to comply with these Terms of Use;</li><li>You are not a minor in the jurisdiction in which you reside;</li><li>You will not access the Site through automated or non-human means, whether through a bot, script, or otherwise;</li><li>You will not use the Site for any illegal or unauthorized purpose.</li></ul>
+      <h2>3. Prohibited Activities</h2><p>You may not access or use the Site for any purpose other than that for which we make the Site available. As a user of the Site, you agree not to:</p><ul><li>Systematically retrieve data or other content from the Site to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</li><li>Use the Site to advertise or offer to sell goods and services.</li><li>Engage in unauthorized framing of or linking to the Site.</li><li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.</li></ul>
+      <h2>4. User Generated Contributions</h2><p>The Site may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site.</p>
+      <h2>5. Site Management</h2><p>We reserve the right, but not the obligation, to:</p><ul><li>Monitor the Site for violations of these Terms of Use;</li><li>Take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Use;</li><li>In our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof.</li></ul>
+      <h2>6. Modifications and Interruptions</h2><p>We reserve the right to change, modify, or remove the contents of the Site at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Site.</p>
+      <h2>7. Governing Law</h2><p>These terms shall be governed by and defined following the laws of Nigeria. The African Food and Drinks Festival and yourself irrevocably consent that the courts of Nigeria shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these terms.</p>
+      <h2>8. Contact Us</h2><p>In order to resolve a complaint regarding the Site or to receive further information regarding the use of the Site, please contact us at festival@afrifoodnetwork.com.</p>
+    </Legal>
+  );
+}
