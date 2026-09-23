@@ -30,7 +30,7 @@ export default function AdminPanel() {
   }
   async function saveSettings(e: React.FormEvent) { e.preventDefault(); if (!settings) return; const j = await post({ action: "settings", ...settings }); setMsg({ ok: j.ok, text: j.ok ? "Settings saved." : j.error }); load(); }
 
-  if (authed === null) return <p className="text-white">Loading…</p>;
+  if (authed === null) return <div><h1 className="text-[32px] text-white">Festival registrations</h1><p className="mt-3 text-white/80">Loading…</p></div>;
   if (!authed) return (
     <form onSubmit={login} className="panel panel--white mx-auto max-w-sm"><h1 className="text-[26px]">Registrations admin</h1><label className="label mt-5">Admin password<input className="input" type="password" value={secret} onChange={(e) => setSecret(e.target.value)} autoFocus /></label>{msg && <p className="mt-2 text-[13px] text-red-600">{msg.text}</p>}<button className="btn btn--red mt-4">Sign in <span aria-hidden>→</span></button></form>
   );

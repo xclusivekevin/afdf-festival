@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "The African Food and Drinks Festival is one of the largest gatherings of the biggest African food influencers, bloggers, chefs & thousands of food lovers globally.",
   alternates: { canonical: "./" },
   icons: { icon: "/img/AFN-Logo1.png" },
-  openGraph: { type: "website", locale: "en_GB", url: "./", siteName: "African Food & Drinks Festival", images: ["/img/Hero-2-scaled.jpg"] },
+  openGraph: { type: "website", locale: "en_GB", url: "./", siteName: "African Food & Drinks Festival" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
