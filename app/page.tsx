@@ -47,7 +47,7 @@ export default function Home() {
               <p>This legacy of unforgettable moments is why the African Food & Drinks Festival continues to be the gathering everyone looks forward to year after year.</p>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-              {YEARS_IMGS.map((f) => <Image key={f} src={`/img/${f}`} alt="Festival moment" width={400} height={533} className="aspect-[3/4] w-full rounded-lg object-cover" />)}
+              {YEARS_IMGS.map((f) => <Image key={f} src={`/img/${f}`} alt="African Food & Drinks Festival crowd, vendors and performances" width={400} height={533} className="aspect-[3/4] w-full rounded-lg object-cover" />)}
             </div>
             <div className="mt-10 text-center"><Btn href="https://www.instagram.com/afrifoodfestival/" variant="red">View Past Events <Arrow /></Btn></div>
           </div>

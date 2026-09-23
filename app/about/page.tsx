@@ -35,7 +35,7 @@ export default function About() {
       <section className="section bg-maroon">
         <div className="container">
           <h2 className="text-center text-[length:var(--text-h1-sm)]">Event Features</h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{FEATURES.map(([t, d, img]) => <div key={t} className="overflow-hidden rounded-2xl bg-white text-[color:var(--afdf-ink-900)]"><Image src={`/img/${img}`} alt="" width={600} height={400} className="aspect-[3/2] w-full object-cover" /><div className="p-6"><h3 className="text-[20px] text-black">{t}</h3><p className="ui mt-3 text-[14px] leading-[1.6] text-[color:var(--afdf-grey-700)]">{d}</p></div></div>)}</div>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{FEATURES.map(([t, d, img]) => <div key={t} className="overflow-hidden rounded-2xl bg-white text-[color:var(--afdf-ink-900)]"><Image src={`/img/${img}`} alt={t} width={600} height={400} className="aspect-[3/2] w-full object-cover" /><div className="p-6"><h3 className="text-[20px] text-black">{t}</h3><p className="ui mt-3 text-[14px] leading-[1.6] text-[color:var(--afdf-grey-700)]">{d}</p></div></div>)}</div>
         </div>
       </section>
       <section className="section bg-black-pattern">
