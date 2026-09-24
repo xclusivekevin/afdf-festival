@@ -13,7 +13,7 @@ alter table public.festival_registrations enable row level security;
 revoke all on public.festival_registrations from anon, authenticated;
 create or replace view public.festival_capacity as select city, coalesce(sum(tickets),0)::int as tickets_allocated, count(*)::int as registrations from public.festival_registrations where status <> 'cancelled' group by city;
 revoke all on public.festival_capacity from anon, authenticated;
-create table if not exists public.festival_settings (id boolean primary key default true check (id), admin_secret text not null, capacity_lagos integer not null default 2000, capacity_abuja integer not null default 2000, max_tickets_per_order integer not null default 5, registration_closes_at timestamptz not null default '2026-11-15 23:59:59+01', event_dates jsonb not null default '{"Lagos":"Sunday 25 October 2026","Abuja":"Sunday 15 November 2026"}', updated_at timestamptz not null default now());
+create table if not exists public.festival_settings (id boolean primary key default true check (id), admin_secret text not null, capacity_lagos integer not null default 2000, capacity_abuja integer not null default 2000, max_tickets_per_order integer not null default 5, registration_closes_at timestamptz not null default '2026-11-15 23:59:59+01', event_dates jsonb not null default '{"Lagos":"Date to be announced","Abuja":"Date to be announced"}', updated_at timestamptz not null default now());
 alter table public.festival_settings enable row level security;
 revoke all on public.festival_settings from anon, authenticated;
 insert into public.festival_settings (admin_secret) values ('REPLACE_WITH_A_LONG_RANDOM_SECRET') on conflict (id) do nothing;

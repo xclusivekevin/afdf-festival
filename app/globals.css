@@ -53,3 +53,5 @@
    64ch of the "0" glyph lands at roughly 70 real characters. */
 main p, main li, main dd { max-width: 64ch; }
 main p.mx-auto, main li.mx-auto, main dd.mx-auto { margin-inline: auto; }
+/* the cap shrinks the box, so centred containers keep their paragraphs centred */
+main .text-center p, main .text-center li, main .text-center dd, main .text-center blockquote { margin-inline: auto; }
